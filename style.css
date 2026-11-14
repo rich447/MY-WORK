@@ -1,0 +1,57 @@
+*{
+    margins: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.navbar{
+    background-color: rgb(1, 16, 23);
+    padding: 20px 5%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-decoration: none;
+}
+.logo span{
+    color:aqua;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color:aqua;
+    text-decoration: underline;
+}
+.join-btn{
+    background-color: rgb(0, 229, 255);
+    border-radius: 12px;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+@media(max-width: 700px){
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
